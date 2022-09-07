@@ -37,7 +37,6 @@ const showCartItemFromLocalStorage = () => {
 showCartItemFromLocalStorage();
 
 document.getElementById('remove-cart').addEventListener('click', function (e) {
-    console.log('reove click');
     localStorage.removeItem('cart');
     showCartItemFromLocalStorage();
     e.target.classList.add('d-none');
